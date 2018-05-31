@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC><html><head>
+  <meta charset="utf-8"><title>Markdown examples.</title>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  },
+  "position": "top",
+  "static": true
+})});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114742711-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114742711-1');
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://derpmarine168.github.io/CSS/standard.css" />
+<style>
+.column {
+  float: left;
+  width: 47%;
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+.column-two {
+  float: left;
+  width: 47%;
+  background-color: white;
+  color: black;
+  padding: 1%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}</style>
+</head><body><p></p><div class="row">
+  <div class="column">
+<p id="code" class="brush: text; plain-text">## notes:<br />
+<br />
+<br />
+title text comes up when you hover over something.<br />
+If you start a line with a number and a dot, you need to escape the dot. Eg:<br />
+<br />
+2020. The year of the future. <br />
+2020\. The year of the future.<br />
+<br />
+<br />
+## Backslash escapes:<br />
+<br />
+<br />
+markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in markdown's formatting syntax. <br />
+<br />
+<br />
+Things you may need to escape:<br />
+<br />
+<br />
+`\` | Backslash<br />
+<br />
+`` ` `` | Backtick<br />
+<br />
+`*` | Asterisk<br />
+<br />
+`_` | Underscore<br />
+<br />
+`{}` | curly Braces<br />
+<br />
+`[]` | square Brackets<br />
+<br />
+`()` | parentheses<br />
+<br />
+`#` | Hash Mark<br />
+<br />
+`+` | Plus Sign<br />
+<br />
+`-` | Minus Sign (hyphen)<br />
+<br />
+`.` | Dot<br />
+<br />
+`!` | Exclamation Mark<br />
+<br />
+<br />
+<br />
+<br />
+some examples: <br>
+[zombies](https://derpmarine168.github.io/Read/2018-2-27/zombies/),
+[Quotes](https://derpmarine168.github.io/Read/2018-2-27/Quotes/).
+## Italics, Bold, strikethrough <br />
+<br />
+<br />
+You can do italics with *stars* and _underscores_. <br />
+You can create bold by doing __two__ asterics **or** underscores.<br />
+If you want you can do ~~strikethrough~~ .<br />
+<br />
+## Titles:<br />
+<br />
+You can create titles like<br />
+# this<br />
+## this<br />
+### or this<br />
+#### or even this<br />
+ <br />
+Or like this, if you feel like it.<br />
+=========================<br />
+<br />
+## Lists: <br />
+<br />
+1. First ordered list item<br />
+2. Another item<br />
+ * Unordered sub-list. <br />
+1. Actual numbers don't matter, just that it's a number<br />
+ 1. Ordered sub-list<br />
+ 1. The other thingy<br />
+4. And another item.<br />
+<br />
+<br />
+* Unordered list can use asterisks<br />
+- Or minuses<br />
++ Or pluses<br />
+<br />
+## easy paragraphs:<br />
+<br />
+You can create paragraph breaks with three spaces after the paragraph. <br />
+This is another paragraph.<br />
+<br />
+<br />
+## Links: <br />
+<br />
+[I'm an inline-style link](https://www.google.com)<br />
+<br />
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")<br />
+<br />
+[I'm a reference-style link][case-insEnsitive text]<br />
+<br />
+[I'm a relative link.](../blob/master/LICENSE)<br />
+<br />
+[You can use numbers for reference-style link definitions][1]<br />
+<br />
+<br />
+URLs and URLs in angle brackets will automatically get turned into links. <br />
+http://www.example.com or &lt;http://www.example.com&gt; but not <br />
+example.com .<br />
+<br />
+If you use reference style links you must define them.<br />
+<br />
+[casE-insensitive text]: https://www.mozilla.org<br />
+[1]: http://slashdot.org<br />
+<br />
+You can format defenitions in any of these ways:<br />
+<br />
+<br />
+[foo]: http://example.com/ "Optional Title Here"<br />
+[foo]: http://example.com/ 'Optional Title Here'<br />
+[foo]: http://example.com/ (Optional Title Here)<br />
+[foo]: &lt;http://example.com/&gt; "Optional Title Here"<br />
+<br />
+<br />
+## images:<br />
+<br />
+Reference-style (use when there are going to be lots of same img): <br />
+![alt text][logo]<br />
+<br />
+Inline-style (use when there is only one): <br />
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")<br />
+<br />
+<br />
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"<br />
+<br />
+<br />
+## code:<br />
+<br />
+Inline `code` has `back-ticks around` it.<br />
+<br />
+Create blocks of code like this:<br />
+<br />
+```javascript<br />
+var s = "JavaScript syntax highlighting";<br />
+alert(s);<br />
+```<br />
+ <br />
+```python<br />
+s = "Python syntax highlighting"<br />
+print s<br />
+```<br />
+ <br />
+```<br />
+No language indicated, so no syntax highlighting.<br />
+```<br />
+## tables:<br />
+<br />
+Colons can be used to align columns.<br />
+<br />
+ | Tables | Are | Cool | <br />
+ | ------------- | :-------------: | -----: | <br />
+ | col 3 is | right-aligned | $1600 | <br />
+ | col 2 is | centered | $12 | <br />
+ | zebra stripes | are neat | $1 | <br />
+<br />
+There must be at least 3 dashes separating each header cell.<br />
+The outer pipes ( | ) are optional, and you don't need to make the <br />
+raw Markdown line up prettily. You can also use inline Markdown.<br />
+<br />
+Markdown | Less | Pretty<br />
+--- | --- | ---<br />
+*Still* | `renders` | **nicely**<br />
+1 | 2 | 3<br />
+<br />
+## quotes:<br />
+<br />
+&gt; Blockquotes are very handy in email to emulate reply text.<br />
+&gt; This line is part of the same quote.<br />
+<br />
+Quote break.<br />
+<br />
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. <br />
+<br />
+<br />
+## raw HTML<br />
+<br />
+<br />
+You can also use raw HTML in your Markdown, and it'll mostly work pretty well.<br />
+&lt;dl&gt;<br />
+ &lt;dt&gt;Definition list&lt;/dt&gt;<br />
+ &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;<br />
+<br />
+ &lt;dt&gt;Markdown in HTML&lt;/dt&gt;<br />
+ &lt;dd&gt;Does *not* break **at** all. Use HTML &lt;em&gt;tags&lt;/em&gt; though.&lt;/dd&gt;<br />
+&lt;/dl&gt;<br />
+<br />
+<br />
+## dividers:<br />
+<br />
+<br />
+Three or more...<br />
+<br />
+---<br />
+<br />
+Hyphens<br />
+<br />
+***<br />
+<br />
+Asterisks<br />
+<br />
+___<br />
+<br />
+Or Underscores<br />
+<br />
+## YouTube vids:<br />
+<br />
+The easy way to do it is like this:<br />
+<br />
+<br />
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)<br />
+<br />
+For example:<br />
+<br />
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/hdM8gycxGjE/0.jpg)](http://www.youtube.com/watch?v=hdM8gycxGjE)<br />
+<br />
+<br />
+However, doing it in raw html is better as it allows direct playback.<br />
+<br />
+<br />
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YOUTUBE_VIDEO_ID_HERE?rel=0&amp;amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+<br />
+For example:<br />
+<br />
+<br />
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hdM8gycxGjE?rel=0&amp;amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br><br><h6>By Joel Ellis</h6>
+</p>
+</div><p></p>
+  <div class="column-two">
+<h2>notes:</h2>
+<p>title text comes up when you hover over something.<br>
+If you start a line with a number and a dot, you need to escape the dot. Eg:</p>
+<ol>
+<li>The year of the future. <br>
+2020. The year of the future.</li>
+</ol>
+<h2>Backslash escapes:</h2>
+<p>markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in markdown's formatting syntax. </p>
+<p>Things you may need to escape:</p>
+<p><code>\</code>  |   Backslash<br>
+<code>`</code>  |   Backtick<br>
+<code>*</code>  |   Asterisk<br>
+<code>_</code>  |   Underscore<br>
+<code>{}</code>  |   curly Braces<br>
+<code>[]</code>  |   square Brackets<br>
+<code>()</code>  |   parentheses<br>
+<code>#</code>  |   Hash Mark<br>
+<code>+</code>  |   Plus Sign<br>
+<code>-</code>  |   Minus Sign (hyphen)<br>
+<code>.</code>  |   Dot<br>
+<code>!</code>  |   Exclamation Mark
+<br>
+some examples:<br>
+<a href="https://derpmarine168.github.io/Read/2018-2-27/Quotes/">Quotes</a>,<br>
+<a href="https://derpmarine168.github.io/Read/2018-2-27/zombies/">zombies</a>.</p>
+    
+
+</p>
+<h2>Italics, Bold, strikethrough</h2>
+<p>You can do italics with <em>stars</em> and <em>underscores</em>. <br>
+You can create bold by doing <strong>two</strong> asterics <strong>or</strong> underscores.<br>
+If you want you can do <del>strikethrough</del> .</p>
+<h2>Titles:</h2>
+<p>You can create titles like</p>
+<h1>this</h1>
+<h2>this</h2>
+<h3>or this</h3>
+<h4>or even this</h4>
+<h1>Or like this, if you feel like it.</h1>
+<h2>Lists:</h2>
+<ol>
+<li>First ordered list item</li>
+<li>Another item
+<ul>
+<li>Unordered sub-list. </li>
+</ul>
+</li>
+<li>Actual numbers don't matter, just that it's a number
+<ol>
+<li>Ordered sub-list</li>
+<li>The other thingy</li>
+</ol>
+</li>
+<li>And another item.</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+<li>Or minuses</li>
+<li>Or pluses</li>
+</ul>
+<h2>easy paragraphs:</h2>
+<p>You can create paragraph breaks with three spaces after the paragraph. <br><br>
+This is another paragraph.</p>
+<h2>Links:</h2>
+<p><a href="https://www.google.com">I'm an inline-style link</a></p>
+<p><a title="Google's Homepage" href="https://www.google.com">I'm an inline-style link with title</a></p>
+<p><a href="https://www.mozilla.org">I'm a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I'm a relative link.</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>URLs and URLs in angle brackets will automatically get turned into links. <br>
+<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> but not <br>
+example.com .</p>
+<p>If you use reference style links you must define them.</p>
+<p>You can format defenitions in any of these ways:</p>
+<h2>images:</h2>
+<p>Reference-style (use when there are going to be lots of same img): <br>
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<p>Inline-style (use when there is only one): <br>
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<table><thead><tr></tr></thead><tbody><tr></tr></tbody></table><h2>code:</h2>
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Create blocks of code like this:</p>
+<pre><code class="javascript">var s = "JavaScript syntax highlighting";
+alert(s);
+</code></pre>
+<pre><code class="python">s = "Python syntax highlighting"
+print s
+</code></pre>
+<pre><code>No language indicated, so no syntax highlighting.
+</code></pre>
+<h2>tables:</h2>
+<p>Colons can be used to align columns.</p>
+<table><thead><tr><th>Tables</th><th align="center">Are</th><th align="right">Cool</th></tr></thead><tbody><tr><td>col 3 is</td><td align="center">right-aligned</td><td align="right">$1600</td></tr><tr><td>col 2 is</td><td align="center">centered</td><td align="right">$12</td></tr><tr><td>zebra stripes</td><td align="center">are neat</td><td align="right">$1</td></tr></tbody></table><p>There must be at least 3 dashes separating each header cell.<br>
+The outer pipes ( |  ) are optional, and you don't need to make the <br>
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table><thead><tr><th>Markdown</th><th>Less</th><th>Pretty</th></tr></thead><tbody><tr><td><em>Still</em></td><td><code>renders</code></td><td><strong>nicely</strong></td></tr><tr><td>1</td><td>2</td><td>3</td></tr></tbody></table><h2>quotes:</h2>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>
+This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote. </p>
+</blockquote>
+<h2>raw HTML</h2>
+<p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.<br>
+</p><dl><br>
+<dt>Definition list</dt><br>
+<dd>Is something people use sometimes.</dd><p></p>
+<p></p><dt>Markdown in HTML</dt><br>
+<dd>Does <em>not</em> break <strong>at</strong> all. Use HTML <em>tags</em> though.</dd><br>
+</dl><p></p>
+<h2>dividers:</h2>
+<p>Three or more...</p>
+
+<hr>
+<p>Hyphens</p>
+
+<hr>
+<p>Asterisks</p>
+
+<hr>
+<p>Or Underscores</p>
+<h2>YouTube vids:</h2>
+<p>The easy way to do it is like this:</p>
+<p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+<p>For example:</p>
+<p><a href="http://www.youtube.com/watch?v=hdM8gycxGjE"><img src="http://img.youtube.com/vi/hdM8gycxGjE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+<p>However, doing it in raw html is better as it allows direct playback.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YOUTUBE_VIDEO_ID_HERE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe><p>For example:</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hdM8gycxGjE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe><br><br><h6>By Joel Ellis</h6>
+</div>
+</div>
+</body></html>
